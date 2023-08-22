@@ -14,7 +14,7 @@
 
 .App {
   background-color: #7d8df6;
-  height: 97vh;
+  height: 100vh;
   width: 100%;
   font-family: "Poppins", sans-serif;
 
@@ -133,6 +133,10 @@
   width: 100%;
   font-family: "Poppins", sans-serif;
 
+  @include mobile {
+    height: 97vh;
+  }
+
   .topContainer {
     display: flex;
     justify-content: space-between;
@@ -175,11 +179,18 @@
             width: 24px;
             border-radius: 50%;
             object-fit: cover;
+            @include mobile {
+              height: 20px;
+              width: 20px;
+            }
           }
           span {
             width: 500px;
             max-width: max-content;
             color: white;
+            @include mobile {
+              font-size: 12px;
+            }
           }
 
           p {
@@ -199,9 +210,9 @@
         border-radius: 5px;
         font-weight: bold;
         @include mobile {
-          font-size: 10px;
+          font-size: 8px;
           width: 60px;
-          padding: 8px;
+          padding: 6px;
         }
       }
       button:hover {
