@@ -347,7 +347,9 @@
     }
 
     .bottomContainer {
-      overflow: hidden;
+      @include mobile {
+        overflow-y: hidden;
+      }
       .chatForm {
         padding: 8px;
         display: flex;
