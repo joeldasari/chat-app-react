@@ -234,7 +234,8 @@
         background-color: #e5d9f7;
 
         @include mobile {
-          height: 80vh;
+          height: 85vh;
+          max-width: max-content;
         }
         .nameAndMsg {
           display: flex;
