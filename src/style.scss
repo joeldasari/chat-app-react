@@ -4,12 +4,6 @@
   }
 }
 
-@mixin mobileLandscape {
-  @media screen and (max-width: 800px) {
-    @content;
-  }
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
@@ -141,7 +135,6 @@
 
   @include mobile {
     height: 97vh;
-    overflow-y: hidden;
   }
 
   .topContainer {
@@ -240,8 +233,7 @@
         background-color: #e5d9f7;
 
         @include mobile {
-          height: 95vh;
-          max-width: max-content;
+          height: 80vh;
         }
         .nameAndMsg {
           display: flex;
@@ -278,10 +270,6 @@
               width: 280px;
               max-width: max-content;
             }
-            @mixin mobileLandscape {
-              width: 580px;
-              max-width: max-content;
-            }
 
             .userName {
               width: 500px;
@@ -305,10 +293,6 @@
                 width: 260px;
                 max-width: max-content;
               }
-              @mixin mobileLandscape {
-                width: 560px;
-                max-width: max-content;
-              }
             }
           }
           &.owner {
@@ -328,10 +312,6 @@
                 width: 280px;
                 max-width: max-content;
               }
-              @mixin mobileLandscape {
-                width: 580px;
-                max-width: max-content;
-              }
               .userName {
                 display: none;
               }
@@ -344,10 +324,6 @@
 
                 @include mobile {
                   width: 260px;
-                  max-width: max-content;
-                }
-                @mixin mobileLandscape {
-                  width: 560px;
                   max-width: max-content;
                 }
               }
