@@ -4,6 +4,12 @@
   }
 }
 
+@mixin mobileLandscape {
+  @media screen and (max-width: 800px) {
+    @content;
+  }
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
@@ -234,7 +240,7 @@
         background-color: #e5d9f7;
 
         @include mobile {
-          height: 85vh;
+          height: 95vh;
           max-width: max-content;
         }
         .nameAndMsg {
@@ -272,6 +278,10 @@
               width: 280px;
               max-width: max-content;
             }
+            @mixin mobileLandscape {
+              width: 580px;
+              max-width: max-content;
+            }
 
             .userName {
               width: 500px;
@@ -295,6 +305,10 @@
                 width: 260px;
                 max-width: max-content;
               }
+              @mixin mobileLandscape {
+                width: 560px;
+                max-width: max-content;
+              }
             }
           }
           &.owner {
@@ -314,6 +328,10 @@
                 width: 280px;
                 max-width: max-content;
               }
+              @mixin mobileLandscape {
+                width: 580px;
+                max-width: max-content;
+              }
               .userName {
                 display: none;
               }
@@ -326,6 +344,10 @@
 
                 @include mobile {
                   width: 260px;
+                  max-width: max-content;
+                }
+                @mixin mobileLandscape {
+                  width: 560px;
                   max-width: max-content;
                 }
               }
