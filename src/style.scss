@@ -14,7 +14,7 @@
 
 .App {
   background-color: #7d8df6;
-  height: 100vh;
+  height: 97vh;
   width: 100%;
   font-family: "Poppins", sans-serif;
 
@@ -143,7 +143,7 @@
     h1 {
       font-size: 24px;
       @include mobile {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
 
@@ -153,13 +153,12 @@
       gap: 15px;
       @include mobile {
         gap: 10px;
-        font-size: 14px;
       }
 
       p {
         font-weight: 600;
         @include mobile {
-          font-size: 14px;
+          font-size: 12px;
         }
       }
 
@@ -256,6 +255,11 @@
             background-color: white;
             border-radius: 0px 5px 5px 5px;
 
+            @include mobile {
+              width: 280px;
+              max-width: max-content;
+            }
+
             .userName {
               width: 500px;
               max-width: max-content;
@@ -266,7 +270,6 @@
               font-weight: bold;
             }
             .userMsg {
-              width: 800px;
               max-width: max-content;
               color: white;
               width: 780px;
@@ -275,6 +278,10 @@
               padding-left: 4px;
               padding-right: 4px;
               font-size: 14px;
+              @include mobile {
+                width: 260px;
+                max-width: max-content;
+              }
             }
           }
           &.owner {
@@ -289,6 +296,11 @@
               font-size: 14px;
               background-color: #6071de;
               border-radius: 5px 0px 5px 5px;
+
+              @include mobile {
+                width: 280px;
+                max-width: max-content;
+              }
               .userName {
                 display: none;
               }
@@ -298,6 +310,11 @@
                 color: white;
                 padding: 5px;
                 font-size: 14px;
+
+                @include mobile {
+                  width: 260px;
+                  max-width: max-content;
+                }
               }
             }
           }
