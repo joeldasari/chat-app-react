@@ -39,8 +39,6 @@ function App() {
                 <div className="userName">
                   <img src={auth.currentUser.photoURL} alt="profilePic" />
                   <span>{auth.currentUser.displayName}</span>
-                </div>
-                <div className="signout">
                   <button className="signoutBtn" onClick={signUserOut}>
                     Sign Out
                   </button>
